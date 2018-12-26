@@ -28,7 +28,7 @@ def convert_decimal_to_base(decimal_number, base):
     return num
 
 
-print(convert_decimal_to_binary(100))
+print(convert_decimal_to_binary(10))
 print(convert_decimal_to_binary(42))
 print(convert_decimal_to_base(233, 2))
 print(convert_decimal_to_base(233, 8))
