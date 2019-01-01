@@ -136,3 +136,16 @@ class UnorderedList:
             curr.set_next(None)
 
         return deleted_item
+
+    def slice(self, start, stop):
+        sliced_list = []
+        if -1 < start < stop:
+            current = self.head
+            index = 0
+            while current is not None and index < stop:
+                if index >= start:
+                    sliced_list.append(current.get_data())
+                current = current.get_next()
+                index += 1
+
+        return sliced_list

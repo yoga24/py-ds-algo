@@ -8,6 +8,8 @@ my_list.add(93)
 my_list.add(26)
 my_list.add(54)
 
+print(my_list.remove(89))
+print(my_list.slice(1, 3))
 print(my_list.pop())
 print(my_list.pop())
 print(my_list.pop())
