@@ -47,3 +47,4 @@ def convert_infix_to_prefix(infix_expression):
 
 print(convert_infix_to_prefix('(A+B)'))
 print(convert_infix_to_prefix('A+B*C'))
+print(convert_infix_to_prefix('(3+(4*5))'))

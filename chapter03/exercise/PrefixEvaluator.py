@@ -17,7 +17,7 @@ def calculate(op, operand_one, operand_two):
     return result
 
 
-def evaluate_infix_expr(infix_expr):
+def evaluate_prefix_expr(infix_expr):
     ops = '(+-*/**)'
     operands = Stack()
     list_expr = infix_expr.split(' ')
@@ -33,7 +33,7 @@ def evaluate_infix_expr(infix_expr):
     return operands.pop()
 
 
-print(evaluate_infix_expr('+ 8 2'))
-print(evaluate_infix_expr('* 8 2'))
-print(evaluate_infix_expr('+ 8 * 2 10'))
-print(evaluate_infix_expr('* 8 + 2 10'))
+print(evaluate_prefix_expr('+ 8 2'))
+print(evaluate_prefix_expr('* 8 2'))
+print(evaluate_prefix_expr('+ 8 * 2 10'))
+print(evaluate_prefix_expr('* 8 + 2 10'))
